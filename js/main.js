@@ -1,23 +1,24 @@
 //Creaction on the module 
-var angularRoutingApp = angular.module('angularRoutingApp', ['ngRoute']);
+angular.module('TodoApp', ['ngRoute'])
+    //Configutation on the ruts 
+    /** @ngInject */
+    //config.$inject = ['$routeProvider'];
+    .config(['$routeProvider',
+        function($routeProvider) {
 
-//Configutation on the ruts 
-/** @ngInject */
-//config.$inject = ['$routeProvider'];
-angularRoutingApp.config(function($routeProvider) {
+            $routeProvider
 
-    $routeProvider
+                .when('/pages/TodoM', {
+                    templateUrl: 'pages/TodoM.html',
+                    controller: 'mainController',
+                    controllerAs: 'TodoM'
+                })
+                .otherwise({
+                    redirectTo: '/'
+                });
+        }
+    ]);
 
-        .when('/TodoM', {
-            templateUrl: 'pages/TodoM.html',
-            controller: 'mainController',
-            controllerAs: 'TodoM'
-        })
-        .otherwise({
-            redirectTo: '/'
-        });
-});
-
-angularRoutingApp.controller('mainController', function($scope) {
+TodoApp.controller('mainController', function($scope) {
     $scope.message = 'Hola, Mundo!';
 });
