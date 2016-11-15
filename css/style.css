@@ -22,7 +22,7 @@ header nav {
     background:  #00c853;
     z-index: 1000;
     max-width: 1000px;
-    width: 95%;
+    width: 200%;
     margin: 20px auto;
 }
 
@@ -87,6 +87,7 @@ header nav ul li .caret {
     margin-right: 0px;
 }
 
+/* Pagina Responsive */ 
 @media screen and (max-width: 800px) {
     body {
         padding-top: 80px;
@@ -139,4 +140,6 @@ header nav ul li .caret {
     header nav ul li .caret {
         float: right;
     }
+
 }
+
