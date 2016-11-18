@@ -1,0 +1,11 @@
+<section id="wrapper-add-todo">
+			<input type="text" ng-model="newTodo" class="text_style"/>
+			<button ng-click="addTodo()" id="enter">Add</button>
+			<button ng-click="removeAllTodo()" id="clean">Remove</button>
+		</section>
+		<section id="wrapper-todo">
+			<div class="todo-item" ng-repeat="todoItem in todo">
+				{{todoItem.name}}
+				<span class="remove" ng-click="removeItemTodo($index)"></span>
+			</div>
+</section>

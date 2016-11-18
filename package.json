@@ -1,0 +1,19 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "todo whith angularjs,gruntjs,sass",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vega178/ToDo-whit-Angularjs.git"
+  },
+  "author": "Esteban Vega Patiño",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vega178/ToDo-whit-Angularjs/issues"
+  },
+  "homepage": "https://github.com/vega178/ToDo-whit-Angularjs#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

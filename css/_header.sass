@@ -1,0 +1,53 @@
+header 
+    width: 100%
+    nav 
+        background: $fondDiv
+        z-index: 1000
+        max-width: 2000px
+        width: 100%
+        margin: 20px auto
+        ul 
+            list-style: none
+            text-align: center
+            span
+                color: $verde_claro
+                
+            li 
+                display: inline-block
+                position: relative
+                &:hover 
+                    background: $amarillo_oscuro
+                    .children
+                        display: block
+                a
+                    color: #fff
+                    display: block
+                    text-decoration: none
+                    padding: 20px
+                    span
+                        margin-right: 10px      
+            .children
+                display: none
+                background: $fondDiv
+                position: absolute
+                width: 150%
+                z-index: 1000
+                li
+                    display: block
+                    overflow: hidden
+                    border-bottom: 1px solid rgba(255, 255, 255, .5)
+                    a
+                        display: block
+                        span
+                            float: right
+                            position: relative
+                            top: 3px
+                            margin-right: 0
+                            margin-left: 10px
+            li
+                .caret
+                    position: relative
+                    top: 3px
+                    margin-left: 10px
+                    margin-right: 0px                
+                
