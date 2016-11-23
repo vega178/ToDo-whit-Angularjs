@@ -15,7 +15,7 @@ body {
 header {
   width: 100%; }
   header nav {
-    background: #00c853;
+    background: #f4ff81;
     z-index: 1000;
     max-width: 2000px;
     width: 100%;
@@ -67,7 +67,6 @@ header {
 @media screen and (max-width: 800px) {
   body {
     padding-top: 80px; }
-
   .menu_bar {
     display: block;
     width: 100%;
@@ -85,7 +84,6 @@ header {
     .menu_bar span {
       float: right;
       font-size: 40px; }
-
   header nav {
     width: 80%;
     height: calc(100% - 80px);
@@ -107,6 +105,7 @@ header {
           margin-left: 20px; }
       header nav ul li .caret {
         float: right; } }
+
 #wrapper-add-todo {
   text-align: center;
   padding: 16px 0;
@@ -161,7 +160,7 @@ header {
     color: #fff;
     position: relative; }
     #wrapper-todo .todo-item .remove {
-      transition: opacity 0.5s linear;
+      transition: opacity .5s linear;
       position: absolute;
       width: 20px;
       height: 20px;
@@ -170,8 +169,6 @@ header {
       right: 0;
       cursor: pointer;
       background-size: 20px 20px;
-      opacity: 0.5; }
+      opacity: .5; }
       #wrapper-todo .todo-item .remove:hover {
         opacity: 1; }
-
-/*# sourceMappingURL=main.css.map */
